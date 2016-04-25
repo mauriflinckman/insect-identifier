@@ -1,0 +1,97 @@
+[
+{
+"Name":	"lehtokiitäjäinen",
+"LatinName": "Carabus nemoralis",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Violet",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "Carabus nemoralis lehtokiitäjäinen tv20130514_009.jpg"
+}
+
+{
+"Name":	"mäkiloimukiitäjäinen",
+"LatinName": "Badister bullatus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Orange",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "Badister bullatus mäkiloimukiitäjäinen tv20140519_034.jpg"
+}
+
+{
+"Name":	"kaunosylkikuoriainen",
+"LatinName": "Cantharis pellucida",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Orange",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "Cantharis pellucida kaunosylkikuoriainen tv20140603_002.jpg"
+}
+
+
+{
+"Name":	"vihersysikiitäjäinen",
+"LatinName": "Poecilus versicolor",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Green",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "Poecilus versicolor Vihersysikiitäjäinen tv20140418_008.jpg"
+}
+
+
+{
+"Name":	"vaskisysikiitäjäinen",
+"LatinName": "Poecilus cupreus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Green",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "Poecilus versicolor Vihersysikiitäjäinen tv20140418_008.jpg"
+}
+
+{
+"Name":	"härmejäärä",
+"LatinName": "Agapanthia villosoviridescens",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Golden",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "Agapanthia villosoviridescens härmejäärä tv20110629_038.jpg"
+}
+
+{
+"Name":	"juomujäärä",
+"LatinName": "Brachyta interrogationis",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Orange",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "Brachyta interrogationis juomujäärä tv20120613_001.jpg"
+}
+
+Name	juomujäärä
+LatinName Brachyta interrogationis
+Category	Beetle
+Legs	6
+PrimaryColor Black
+SecondaryColor Orange
+Territory SouthFinland MiddleFinland
+Size	10-22
+Image Brachyta interrogationis juomujäärä tv20120613_001.jpg
+}

@@ -1,0 +1,49 @@
+<table >
+<tr> <td align="center">
+<p>Name: {{insect.name}}</p>
+<p> Latin name: {{insect.latinName}}</p>
+</td></tr>
+
+<tr><td align="center"><p>Description: {{description}}</p></td></tr>
+<tr><td align="center"><img align="middle" ng-src="{{insect.image}}" /> </td></tr> 
+
+<select ng-model="prevUrl" id="selection"><option value={{prevUrl}}>search<option value="#/collection">collection</select>
+<tr><td>
+<div ng-switch="prevUrl">
+  <div ng-switch-when="#/list">
+     <input type="button" value="New search" ng-click="new_search()"/>
+		<input type="button" value="Add to collection" ng-click="add_to_collection()"/>
+  </div>
+  <div ng-switch-when="#/collection">
+     <input type="button" value="Return to collection" ng-click="collection()"/>
+  </div>
+  <div ng-switch-default>
+     <h1>Switch</h1>
+     <p>Select topic from the dropdown, to switch the content of this DIV.</p>
+  </div>
+</div>
+</td></tr>
+<!--
+<div ng-switch="selection">
+	<div ng-switch-when="search">
+		<div >
+			<tr ><td align="center">
+			<input type="button" value="New search" ng-click="new_search()"/>
+			
+			</td></tr>
+		</div>
+	<div ng-switch-when="collection"> 
+		<div>
+			<tr><td align="center">
+			
+			</td></tr>
+		</div>
+	</div>
+	<div ng-switch-default>
+	<tr><td align="center">
+	Default switch
+	</td></tr>
+	</div>
+</div>
+-->
+</table>

@@ -1,0 +1,32 @@
+<!--
+
+<input id="check1" type="checkbox" checked="checked" />
+<label for="check2">Check me</label>
+<p></p>
+ 
+<script>
+$( "#check1" ).change(function() {
+  var $input = $( this );
+  $( "p" ).html(
+    ".attr( \"checked\" ): <b>" + $input.attr( "checked" ) + "</b><br>" +
+    ".prop( \"checked\" ): <b>" + $input.prop( "checked" ) + "</b><br>" +
+    ".is( \":checked\" ): <b>" + $input.is( ":checked" ) ) + "</b>";
+
+}).change();
+
+</script>
+-->
+	<div class="phone-images">
+		 <img ng-src="{{img}}" 
+		 	class="phone" ng-repeat="img in imgs" 
+		 	ng-class="{active: mainImageUrl==img}"/>
+	</div>
+
+<ul class="insect-thumbs">
+  <li ng-repeat="insect in insects | filter:searchParams.category | filter:searchParams.primaryColor | filter:searchParams.secondaryColor | filter:searchParams.legs ">
+    <img ng-src="{{insect.Image}}" ng-click="setImage(insect)"/>
+  </li>
+</ul>
+
+
+<input id="identify" type="button" value="Identify" ng-click="insectDetail()" disabled/>  

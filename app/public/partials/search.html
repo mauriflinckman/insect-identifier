@@ -1,0 +1,73 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+		<form ng-submit='search(query)'> 
+		<table>
+		<tr><th>
+		Category:
+
+      <select name="category" ng-model="query.category">
+			<option value="Ant">ant</option>        
+        	<option value="Beetle">beetle</option>
+        	<option value="Butterfly">butterfly</option>
+        	<option value="Caterpillar">caterpillar</option>        
+      	<option value="Spider">spider</option>
+	      
+	   </select>
+	   </th></tr>
+	   
+		<tr><th>
+      Primary color:
+      <select name="primaryColor" ng-model="query.primaryColor">
+        <option value="Black">black</option>
+        <option value="Blue">blue</option>
+        <option value="Brown">brown</option>
+        <option value="Golden">golden</option>
+        <option value="Green">green</option>
+			<option value="Orange">orange</option>
+        <option value="Red">red</option>
+        <option value="Silver">silver</option>
+        <option value="Turquoise">turquoise</option>
+        <option value="Violet">violet</option>
+        <option value="Yellow">yellow</option>
+      </select>
+      </th></tr>
+      <tr><th>
+      Secondary color: 
+      <select name="secondaryColor" ng-model="query.secondaryColor">
+     <option value="Black">black</option>
+        <option value="Blue">blue</option>
+        <option value="Brown">brown</option>
+        <option value="Golden">golden</option>
+        <option value="Green">green</option>
+			<option value="Orange">orange</option>
+        <option value="Red">red</option>
+        <option value="Silver">silver</option>
+        <option value="Turquoise">turquoise</option>
+        <option value="Violet">violet</option>
+        <option value="Yellow">yellow</option> </select>
+		</th></tr>
+		<tr><th>
+     Number of legs: 
+      <select name="legs" ng-model="query.legs">
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="6">6</option>
+        <option value="8">8</option>
+
+      </select>   
+   </th></tr>  
+   <tr><th>
+ 	<input type="submit" value="Search"/>
+ 	</th></tr>
+
+
+	</table>
+
+ 	
+	</form>
+	 </div>
+ 
+  </div>
+</div>

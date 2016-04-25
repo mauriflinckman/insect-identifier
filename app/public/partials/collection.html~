@@ -1,0 +1,12 @@
+<h1>Collection page</h1>
+	
+
+<ul align="center" class="insect-thumbs">
+
+	<li ng-repeat="insect in localStorage.collection">
+			<p> {{insect.name}}</p>
+		 <img ng-src="{{insect.image}}" ng-click="viewDetail(insect)"/>
+	</li>
+	
+
+</ul>
