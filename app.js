@@ -25,7 +25,7 @@ var configDB = require('./app/config/dbConfig.js');
 
 //+++++
 var routes = require('./app/routes');
-var users = require('./app/users');
+//var users = require('./app/users');
 //+++++
 
 // configuration ===============================================================
@@ -57,7 +57,7 @@ app.set('json spaces', 40);
 //app.use('/', routes);
 //-----
 //+++++
-app.use('/users', users);
+//app.use('/users', users);
 //+++++
 
 // required for passport

@@ -16,7 +16,7 @@ insectIdentifierControllers.controller('UploadInsectCtrl', ['$scope', 'Search', 
 			     var fd = new FormData();
 			     console.log("file: "+file);
 			     fd.append('userPhotos', userPhotos);
-					fd.append('name', name);
+				  fd.append('name', name);
 					fd.append('latinName', latinName);
 					fd.append('imageLinks', imageLinks);
 					fd.append('category', category);
@@ -311,6 +311,8 @@ insectIdentifierControllers.controller('CollectionCtrl', ['$scope', 'Search', '$
 			console.log($scope.categories);
 			console.log(JSON.stringify($localStorage.collection['Butterfly']));
 				    				
+		}).error(function(){
+			window.alert("Refreshing insect collection failed.");		   
 		});		
 		
 		$scope.location=$location;

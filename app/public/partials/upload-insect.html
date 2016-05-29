@@ -3,11 +3,11 @@
 
 <form align="center" action="/insect/insert"  enctype="multipart/form-data" method="post">
 	<table align="center">
-	<tr><td width="10%">{{translations.NAME}}: </td><td><input type="text" name="name" ng-model="user.name"/> 	</td></tr>
-	<tr><td width="10%">{{translations.LATINNAME}}:</td><td> <input type="text" name="latinName" ng-model="user.latinName"/>
+	<tr align="center"><td width="10%">{{translations.NAME}}: </td><td><input type="text" name="name" ng-model="user.name"/> 	</td></tr>
+	<tr align="center"><td width="10%">{{translations.LATINNAME}}:</td><td> <input type="text" name="latinName" ng-model="user.latinName"/>
 	</td></tr>
 	
-	<tr><td width="10%">	{{translations.CATEGORY}}:</td>
+	<tr align="center"><td width="10%">	{{translations.CATEGORY}}:</td>
 		<td>
       <select name="category" ng-model="user.category">
 			<option value="Ant">ant</option>        
@@ -19,7 +19,7 @@
 	   </select>
 	</td></tr>
 	   
-	<tr><td width="10%"> {{translations.PRIMARYCOLOR}}:</td>
+	<tr align="center"><td width="10%"> {{translations.PRIMARYCOLOR}}:</td>
       <td>
       <select name="primaryColor" ng-model="user.primaryColor">
      <option value="Black">{{translations.BLACK}}</option>
@@ -50,7 +50,7 @@
         <option value="Violet">{{translations.VIOLET}}</option>
         <option value="Yellow">{{translations.YELLOW}}</option>
 		</td></tr>
-		<tr><td width="10%"> {{translations.NUMBEROFLEGS}}:</td>
+		<tr align="center"><td width="10%"> {{translations.NUMBEROFLEGS}}:</td>
 		<td> 
       <select name="legs" ng-model="user.legs">
         <option value="2">2</option>
@@ -60,21 +60,21 @@
 
       </select>   
 	</td></tr>
-	<tr><td width="10%">	{{translations.WIKIENTRY}}:</td>
+	<tr align="center"><td width="10%">	{{translations.WIKIENTRY}}:</td>
 	<td> <input type="text" name="wiki" ng-model="user.wiki"/>
 	</td></tr>
-	  	<tr><td width="10%">
+	  	<tr align="center"><td width="10%">
 	 {{translations.SELECTANIMAGETOUPLOAD}}:
  	<input type="file" name="userPhotos" file-model="myFile"/>
   	</td></tr>
 	
-	<tr><td>  	
+	<tr align="center"><td>  	
 	{{translations.IMAGELINKS}}:  
   	
   	<textarea name="imageLinks" ng-model="user.imageLinks"></textarea>
   	</td></tr>  	
   	
-  	<tr><td>
+  	<tr align="center"><td>
 	<input type="submit" class="button" value="{{translations.UPLOADINSECT}}">
   
   	</td></tr>

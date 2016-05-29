@@ -7,38 +7,6 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var multer = require('multer');
 
-/*
-app.use(multer({ 
-	dest: './app/public/images/',
-	rename: function (fieldname, filename) {
-		console.log("renaming");
-    return filename.replace(/\W+/g, '-').toLowerCase() + Date.now();
-  	},
-  	onParseStart: function() {
-		console.log("parsing started");  	
-  	},
-  	onFileUploadStart: function onFileUploadStart(file) {
-		console.log("file upload started");  	
-  	}
-
-  }).single('photo'));
-*/
-/*
-var upload = multer({ 
-	dest: __dirname, 
-	rename: function (fieldname, filename) {
-		console.log("renaming");
-    	return filename.replace(/\W+/g, '-').toLowerCase() + Date.now()
-  	},
-  	onParseStart: function() {
-		console.log("parsing started");  	
-  	},
-  	onFileUploadStart: function onFileUploadStart(file) {
-		console.log("file upload started");  	
-  	}
- });
- */  
-
 var storage	=	multer.diskStorage({
   destination: function (req, file, callback) {
   		console.log("destination: "+__dirname+"/public/images/kovakuoriaiset");
@@ -152,7 +120,7 @@ app.post('/insect/insert', upload.array('userPhotos', 10), function(req, res) {
 
 app.get('/populate_db', function(req, res) {
 	 console.log('populate_db');
-	 fs.readFile(__dirname+'/public/insects/kovakuoriaiset.json', 'utf8', function (err, data) {
+	 fs.readFile(__dirname+'/public/insects/insects.json', 'utf8', function (err, data) {
 	
 		
 		 var insects = JSON.parse(data);

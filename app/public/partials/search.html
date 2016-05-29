@@ -1,10 +1,10 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2">
+<!--<div class="container-fluid">
+  <div class="row" align="center">
+    <div class="col-md-2" align="center">-->
       <!--Sidebar content-->
-		<form ng-submit='search(query)'> 
-		<table>
-		<tr align="center"><td>{{translations.CATEGORY}}:</td>
+		<form ng-submit='search(query)' align="center"> 
+		<table align="center">
+		<tr><td  align="center">{{translations.CATEGORY}}:</td>
 		<td>
       <select name="category" ng-model="query.category">
 			<option value="Ant">{{translations.ANT}}</option>        
@@ -16,7 +16,7 @@
 	   </select>
 	   </td></tr>
 	   
-		<tr align="center"><td> {{translations.PRIMARYCOLOR}}:</td>
+		<tr><td  align="center"> {{translations.PRIMARYCOLOR}}:</td>
 		<td>
       <select name="primaryColor" ng-model="query.primaryColor">
         <option value="Black">{{translations.BLACK}}</option>
@@ -32,7 +32,7 @@
         <option value="Yellow">{{translations.YELLOW}]</option>
       </select>
       </td></tr>
-      <tr align="center"><td>{{translations.SECONDARYCOLOR}}:</td>
+      <tr><td  align="center">{{translations.SECONDARYCOLOR}}:</td>
       <td> 
       <select name="secondaryColor" ng-model="query.secondaryColor">
      <option value="Black">{{translations.BLACK}}</option>
@@ -48,8 +48,8 @@
         <option value="Yellow">{{translations.YELLOW}}</option>
          </select>
 		</td></tr>
-		<tr align="center"><td> {{translations.NUMBEROFLEGS}}:</td>
-		<td> 
+		<tr><td  align="center"> {{translations.NUMBEROFLEGS}}:</td>
+		<td  align="center"> 
       <select name="legs" ng-model="query.legs">
         <option value="2">2</option>
         <option value="4">4</option>
@@ -59,24 +59,24 @@
       </select>   
    </td></tr>
    <br>  
-   <tr align="center"><td>
+   <tr><td  align="center">
  	<input type="submit" class="button button1" value="{{translations.SEARCH}}" />
  	</td></tr>
 
 	</table>
  	
 	</form>
-
+<!--
 	 </div>
   </div>
 </div>
-
+-->
 <p ng-model="searchResults" value={{searchResults}}></p>
 <div ng-switch="searchResults">
   		<div ng-switch-when="showResults">
   			<h2> {{translations.RESULTS}} </h2>
   			
-		<div class="phone-images">
+		<div class="insect-images">
 			 <img ng-src="{{img}}" 
 			 	class="phone" ng-repeat="img in imgs" 
 			 	ng-class="{active: mainImageUrl==img}"/>

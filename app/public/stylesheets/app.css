@@ -15,7 +15,7 @@ body {
 }
 .button1 {background-color: #008CBA;} /* Blue */
 
-.phone-images {
+.insect-images {
   background-color: white;
   width: 450px;
   height: 450px;
@@ -24,7 +24,7 @@ body {
   float: left;
 }
 
-.phone-image {
+.insect-image {
   background-color: white;
   width: 450px;
   height: 450px;
@@ -32,6 +32,11 @@ body {
   position: relative;
 }
 
+form { 
+margin: 0 auto; 
+width:550px;
+text-align: center;
+}
 
 .phones {
   list-style: none;

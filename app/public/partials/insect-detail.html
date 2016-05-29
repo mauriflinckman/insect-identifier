@@ -1,4 +1,4 @@
-<table >
+<table align="center">
 <tr> <td align="center">
 <p>{{translations.NAME}}: {{insect.name}}</p>
 <p> {{translations.LATINNAME}}: {{insect.latinName}}</p>
@@ -10,18 +10,17 @@
 	
 	<div ng-if="insect.images.length > 1"> 
 
-		<div class="phone-images">
+		<div class="insect-images">
 			 <img ng-src="{{img}}" 
 			 	class="phone" ng-repeat="img in insect.images" 
 			 	ng-class="{active: mainImageUrl==img}"/>
 		</div>
 	</div>
 	<div ng-if="insect.images.length ==1">
-		<div class="phone-image">
+		<div class="insect-image">
 
-			 <img ng-src="{{img}}" 
-			 	class="phone" ng-repeat="img in insect.images" 
-			 	ng-class="{active: mainImageUrl==img}"/>
+			 <img ng-src="{{insect.images[0]}}" 
+			 	class="phone"/>
 		</div>
 	</div>
 	<div ng-if="insect.images.length > 1">
