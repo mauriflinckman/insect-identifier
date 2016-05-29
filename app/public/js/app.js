@@ -2,26 +2,29 @@
 
 /* App Module */
 
-var phonecatApp = angular.module('phonecatApp', [
+var insectIdentifierApp = angular.module('insectIdentifierApp', [
   'ngRoute',
-  'phonecatAnimations',
+  'insectIdentifierAnimations',
 
-  'phonecatControllers',
-  'phonecatFilters',
-  'phonecatServices',
-  'ngStorage'
+  'insectIdentifierControllers',
+  //'insectIdentifierFilters',
+  'insectIdentifierServices',
+  'ngStorage',
+  'ngCookies'
   
 ]);
-phonecatApp.config(['$locationProvider',
+ 
+
+insectIdentifierApp.config(['$locationProvider',
   	function ($locationProvider) {
   		 //$locationProvider.html5Mode(false).hashPrefix("!");
   		 
 	}]);
-phonecatApp.config(function($httpProvider) {
+insectIdentifierApp.config(function($httpProvider) {
     //Enable cross domain calls
     $httpProvider.defaults.useXDomain = true;
 });
-phonecatApp.config(['$routeProvider',
+insectIdentifierApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/phones', {
@@ -52,7 +55,12 @@ phonecatApp.config(['$routeProvider',
       		templateUrl: 'partials/collection.html',
       		controller: 'CollectionCtrl'
       }).
-      otherwise({
+      when('/insect/upload', {
+      	templateUrl: 'partials/upload-insect.html',
+      	controller: 'UploadInsectCtrl'
+      }).
+         otherwise({
         redirectTo: '/phones'
       });
   }]);
+  

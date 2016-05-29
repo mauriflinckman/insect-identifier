@@ -1,6 +1,6 @@
-var phonecatAnimations = angular.module('phonecatAnimations', ['ngAnimate']);
+var insectIdentifierAnimations = angular.module('insectIdentifierAnimations', ['ngAnimate']);
 
-phonecatAnimations.animation('.phone', function() {
+insectIdentifierAnimations.animation('.phone', function() {
 
   var animateUp = function(element, className, done) {
     if(className != 'active') {

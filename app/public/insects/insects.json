@@ -1,0 +1,523 @@
+[
+{
+	"Name":	"lehtokiitäjäinen",
+	"LatinName": "Carabus nemoralis",
+	"Category":	"Beetle",
+	"Legs":	"6",
+	"PrimaryColor": "Black",
+	"SecondaryColor": "Violet",
+	"Territory": "SouthFinland MiddleFinland",
+	"Size":	"22-28",
+	"Image": "images/kovakuoriaiset/Carabus nemoralis lehtokiitäjäinen tv20130514_009.jpg",
+	"Wiki": "Carabus_nemoralis"
+},
+
+{
+"Name":	"mäkiloimukiitäjäinen",
+"LatinName": "Badister bullatus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Orange",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "images/kovakuoriaiset/Badister bullatus mäkiloimukiitäjäinen tv20140519_034.jpg"
+},
+
+{
+"Name":	"kaunosylkikuoriainen",
+"LatinName": "Cantharis pellucida",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Orange",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "images/kovakuoriaiset/Cantharis pellucida kaunosylkikuoriainen tv20140603_002.jpg",
+"Wiki": "Cantharis"
+},
+
+
+{
+"Name":	"vihersysikiitäjäinen",
+"LatinName": "Poecilus versicolor",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Green",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "images/kovakuoriaiset/Poecilus versicolor Vihersysikiitäjäinen tv20140418_008.jpg",
+"Wiki":"poecilus_versicolor"
+},
+
+
+{
+"Name":	"vaskisysikiitäjäinen",
+"LatinName": "Poecilus cupreus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Green",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "images/kovakuoriaiset/Poecilus cupreus vaskisysikiitäjäinen tv20140427_043.jpg",
+"Wiki": "Poecilus cupreus"
+},
+
+{
+"Name":	"härmejäärä",
+"LatinName": "Agapanthia villosoviridescens",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Golden",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "images/kovakuoriaiset/Agapanthia villosoviridescens härmejäärä tv20110629_038.jpg",
+"Wiki": "Agapanthia villosoviridescens"
+},
+
+{
+"Name":	"juomujäärä",
+"LatinName": "Brachyta interrogationis",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Orange",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"22-28",
+"Image": "images/kovakuoriaiset/Brachyta interrogationis juomujäärä tv20120613_001.jpg",
+"Wiki": "Brachyta_interrogationis"
+},
+
+{
+"Name":	"lude",
+"LatinName": "Cimex lectulárius",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Yellow",
+"SecondaryColor": "Black",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Cimex_lectularius"
+},
+
+{
+"Name":	"tulilude",
+"LatinName": "Pyrrocoris ápterus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Red",
+"SecondaryColor": "Black",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Pyrrocoris_apterus"
+},
+
+{
+"Name":	"parihammaslude",
+"LatinName": "Picromérus bidens",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Brown",
+"SecondaryColor": "Yellow",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Picromerus_bidens"
+},
+
+{
+"Name":	"juovalude",
+"LatinName": "Graphosoma itálicum",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Green",
+"SecondaryColor": "Blue",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Graphosoma_italicum"
+},
+
+{
+"Name":	"kaalilude",
+"LatinName": "Eurýdema oleráceum",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Green",
+"SecondaryColor": "Blue",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Eurýdema_oleraceum"
+},
+
+{
+"Name":	"vaahtokaskas",
+"LatinName": "Lepyronia coleopráta",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Yellow",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Lepyronia_coleoprata"
+},
+
+{
+"Name":	"luumukirva",
+"LatinName": "Hyalopterus pruni",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Green",
+"SecondaryColor": "Green",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Hyalopterus_pruni"
+},
+
+{
+"Name":	"ruusukilpikirva",
+"LatinName": "Aulacaspis rosae",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Brown",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Aulacaspis_rosae"
+},
+
+{
+"Name":	"kenttäkiitäjäinen",
+"LatinName": "Cicindela campestris",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Green",
+"SecondaryColor": "Yellow",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Cicindela_campestris"
+},
+
+{
+"Name":	"myyräkiitäjäinen",
+"LatinName": "Clivina fossor",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Black",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Clivina_fossor"
+},
+
+{
+"Name":	"metallikiitäjäinen",
+"LatinName": "Harpalus aeneus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Blue",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Harpalus_aeneus"
+},
+
+{
+"Name":	"hopeaseppä",
+"LatinName": "Gyrinus substriatus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Yellow",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Gyrinus substriatus"
+},
+
+{
+"Name":	"täplänupiainen",
+"LatinName": "Stenus caesareus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Red",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Stenus_caesareus"
+},
+
+{
+"Name":	"keisarilyhytsiipi",
+"LatinName": "Staphylinus caesareus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Staphylinus_caesareus"
+},
+
+{
+"Name":	"sokkokuoriainen",
+"LatinName": "Clariger testaceus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Brown",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Clariger_testaceus"
+},
+
+{
+"Name":	"muurahaiskuoriainen",
+"LatinName": "Thanasimus formicarius",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Thanasimus_formicarius"
+},
+
+{
+"Name":	"rapsikuoriainen",
+"LatinName": "Meligethes aeneus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Green",
+"SecondaryColor": "Green",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Meligethes_aeneus"
+},
+
+{
+"Name":	"seitsenpistepirkko",
+"LatinName": "Coccinella septempunctata",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Red",
+"SecondaryColor": "Black",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Coccinella_septempunctata"
+},
+
+{
+"Name":	"kuutäpläpirkko",
+"LatinName": "Chilocorus renipustulatus",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Chilocorus_renipustulatus"
+},
+
+{
+"Name":	"ihrakuoriainen",
+"LatinName": "Dermestes lardarius",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Dermestes_lardarius"
+},
+
+{
+"Name":	"turkiskuoriainen",
+"LatinName": "Attagenus pellio",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Black",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Attagenus_pellio"
+},
+
+{
+"Name":	"haudankaivaja",
+"LatinName": "Necrophorus vespillo",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Red",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Necrophorus_vespillo"
+},
+
+{
+"Name":	"musta turkkilo",
+"LatinName": "Necrophorus humator",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Black",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Necrophorus_humator"
+},
+
+{
+"Name":	"raatokuoriainen",
+"LatinName": "Oeceptoma thoracicum",
+"Category":	"Beetle",
+"Legs":	"6",
+"PrimaryColor": "Black",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Oeceptoma_thoracicum"
+},
+
+{
+"Name":	"ritariperhonen",
+"LatinName": "Papilio machaon",
+"Category":	"Butterfly",
+"Legs":	"4",
+"PrimaryColor": "Yellow",
+"SecondaryColor": "Blue",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Papilio_machaon"
+},
+
+{
+"Name":	"apolloperhonen",
+"LatinName": "Parnassius apollo",
+"Category":	"Butterfly",
+"Legs":	"4",
+"PrimaryColor": "White",
+"SecondaryColor": "Red",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Parnassius_apollo"
+},
+
+{
+"Name":	"kaaliperhonen",
+"LatinName": "Pieris brassicae",
+"Category":	"Butterfly",
+"Legs":	"4",
+"PrimaryColor": "White",
+"SecondaryColor": "Blue",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Pieris_brassicae"
+},
+
+{
+"Name":	"lanttuperhonen",
+"LatinName": "Pieris napi",
+"Category":	"Butterfly",
+"Legs":	"4",
+"PrimaryColor": "White",
+"SecondaryColor": "Yellow",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Pieris_napi"
+},
+
+{
+"Name":	"sitruunaperhonen",
+"LatinName": "Gonopteryx rhamni",
+"Category":	"Butterfly",
+"Legs":	"4",
+"PrimaryColor": "Yellow",
+"SecondaryColor": "Red",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Gonopteryx_rhamni"
+},
+
+{
+"Name":	"orapihlajaperhonen",
+"LatinName": "Aporia crataegi",
+"Category":	"Butterfly",
+"Legs":	"4",
+"PrimaryColor": "White",
+"SecondaryColor": "Green",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Aporia_crataegi"
+},
+
+{
+"Name":	"auroraperhonen",
+"LatinName": "Anthocharis cardamines",
+"Category":	"Butterfly",
+"Legs":	"4",
+"PrimaryColor": "White",
+"SecondaryColor": "Orange",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Anthocharis_cardamines"
+},
+
+{
+"Name":	"suon keltaperhonen",
+"LatinName": "Colias palaeno",
+"Category":	"Butterfly",
+"Legs":	"4",
+"PrimaryColor": "Yellow",
+"SecondaryColor": "Brown",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Colias_palaeno"
+},
+
+{
+"Name":	"haapaperhonen",
+"LatinName": "Limentis populi",
+"Category":	"Butterfly",
+"Legs":	"4",
+"PrimaryColor": "Black",
+"SecondaryColor": "Orange",
+"Territory": "SouthFinland MiddleFinland",
+"Size":	"",
+"Image": "",
+"Wiki": "Limentis_populi"
+}
+
+]

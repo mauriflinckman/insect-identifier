@@ -4,52 +4,52 @@
       <!--Sidebar content-->
 		<form ng-submit='search(query)'> 
 		<table>
-		<tr><th>
-		Category:
-
+		<tr align="center"><td>{{translations.CATEGORY}}:</td>
+		<td>
       <select name="category" ng-model="query.category">
-			<option value="Ant">ant</option>        
-        	<option value="Beetle">beetle</option>
-        	<option value="Butterfly">butterfly</option>
-        	<option value="Caterpillar">caterpillar</option>        
-      	<option value="Spider">spider</option>
+			<option value="Ant">{{translations.ANT}}</option>        
+        	<option value="Beetle">{{translations.BEETLE}}</option>
+        	<option value="Butterfly">{{translations.BUTTERFLY}}</option>
+        	<option value="Caterpillar">{{translations.CATERPILLAR}}</option>        
+      	<option value="Spider">{{translations.SPIDER}}</option>
 	      
 	   </select>
-	   </th></tr>
+	   </td></tr>
 	   
-		<tr><th>
-      Primary color:
+		<tr align="center"><td> {{translations.PRIMARYCOLOR}}:</td>
+		<td>
       <select name="primaryColor" ng-model="query.primaryColor">
-        <option value="Black">black</option>
-        <option value="Blue">blue</option>
-        <option value="Brown">brown</option>
-        <option value="Golden">golden</option>
-        <option value="Green">green</option>
-			<option value="Orange">orange</option>
-        <option value="Red">red</option>
-        <option value="Silver">silver</option>
-        <option value="Turquoise">turquoise</option>
-        <option value="Violet">violet</option>
-        <option value="Yellow">yellow</option>
+        <option value="Black">{{translations.BLACK}}</option>
+        <option value="Blue">{{translations.BLUE}}</option>
+        <option value="Brown">{{translations.BROWN}}</option>
+        <option value="Golden">{{translations.GOLDEN}}</option>
+        <option value="Green">{{translations.GREEN}}</option>
+			<option value="Orange">{{translations.ORANGE}}</option>
+        <option value="Red">{{translations.RED}}</option>
+        <option value="Silver">{{translations.SILVER}}</option>
+        <option value="Turquoise">{{translations.TURQUOISE}}</option>
+        <option value="Violet">{{translations.VIOLET}}</option>
+        <option value="Yellow">{{translations.YELLOW}]</option>
       </select>
-      </th></tr>
-      <tr><th>
-      Secondary color: 
+      </td></tr>
+      <tr align="center"><td>{{translations.SECONDARYCOLOR}}:</td>
+      <td> 
       <select name="secondaryColor" ng-model="query.secondaryColor">
-     <option value="Black">black</option>
-        <option value="Blue">blue</option>
-        <option value="Brown">brown</option>
-        <option value="Golden">golden</option>
-        <option value="Green">green</option>
-			<option value="Orange">orange</option>
-        <option value="Red">red</option>
-        <option value="Silver">silver</option>
-        <option value="Turquoise">turquoise</option>
-        <option value="Violet">violet</option>
-        <option value="Yellow">yellow</option> </select>
-		</th></tr>
-		<tr><th>
-     Number of legs: 
+     <option value="Black">{{translations.BLACK}}</option>
+        <option value="Blue">{{translations.BLUE}}</option>
+        <option value="Brown">{{translations.BROWN}}</option>
+        <option value="Golden">{{translations.GOLDEN}}</option>
+        <option value="Green">{{translations.GREEN}}</option>
+			<option value="Orange">{{translations.ORANGE}}</option>
+        <option value="Red">{{translations.RED}}</option>
+        <option value="Silver">{{translations.SILVER}}</option>
+        <option value="Turquoise">{{translations.TURQUOISE}}</option>
+        <option value="Violet">{{translations.VIOLET}}</option>
+        <option value="Yellow">{{translations.YELLOW}}</option>
+         </select>
+		</td></tr>
+		<tr align="center"><td> {{translations.NUMBEROFLEGS}}:</td>
+		<td> 
       <select name="legs" ng-model="query.legs">
         <option value="2">2</option>
         <option value="4">4</option>
@@ -57,17 +57,40 @@
         <option value="8">8</option>
 
       </select>   
-   </th></tr>  
-   <tr><th>
- 	<input type="submit" value="Search"/>
- 	</th></tr>
-
+   </td></tr>
+   <br>  
+   <tr align="center"><td>
+ 	<input type="submit" class="button button1" value="{{translations.SEARCH}}" />
+ 	</td></tr>
 
 	</table>
-
  	
 	</form>
+
 	 </div>
- 
   </div>
 </div>
+
+<p ng-model="searchResults" value={{searchResults}}></p>
+<div ng-switch="searchResults">
+  		<div ng-switch-when="showResults">
+  			<h2> {{translations.RESULTS}} </h2>
+  			
+		<div class="phone-images">
+			 <img ng-src="{{img}}" 
+			 	class="phone" ng-repeat="img in imgs" 
+			 	ng-class="{active: mainImageUrl==img}"/>
+		</div>
+	
+		<ul class="insect-thumbs">
+	  		<li ng-repeat="insect in insects | filter:searchParams.category | filter:searchParams.primaryColor | filter:searchParams.secondaryColor | filter:searchParams.legs ">
+	    	<img ng-src="{{insect.images[0]}}" ng-click="setImage(insect)"/>
+	  		</li>
+		</ul>
+
+		<input id="identify" type="button" class="button button1" value="{{translations.IDENTIFY}}" ng-click="insectDetail()"/>  
+  	</div>
+	<div ng-switch-when="noResults">
+		{{translations.NORESULTS}}	
+	</div>
+  	</div>

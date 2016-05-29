@@ -1,12 +1,20 @@
-<h1>Collection page</h1>
-	
+<h1>{{translations.COLLECTIONPAGE}}</h1>
 
-<ul align="center" class="insect-thumbs">
+<div ng-repeat="insects in localStorage.collection">
+	<div ng-if="insects.length > 0">
+		<h2 ng-if="insects[0].category == 'Beetle'">{{translations.Ant}}</h2>
+		<h2 ng-if="insects[0].category == 'Beetle'">{{translations.Beetle}}</h2>
+		<h2 ng-if="insects[0].category == 'Butterfly'">{{translations.Butterfly}}</h2>
+		<h2 ng-if="insects[0].category == 'Caterpillar'">{{translations.Caterpillar}}</h2>
+		<h2 ng-if="insects[0].category == 'Spider'">{{translations.Spider}}</h2>
+		<ul align="center" class="insect-thumbs">
+			<li ng-repeat="insect in insects">
+				<p> {{insect.name}}</p>
+				<img ng-src="{{insect.images[0]}}" ng-click="viewDetail(insect)"/>
+			</li>
+		</ul>
+	</div>
+</div>  
 
-	<li ng-repeat="insect in localStorage.collection">
-			<p> {{insect.name}}</p>
-		 <img ng-src="{{insect.image}}" ng-click="viewDetail(insect)"/>
-	</li>
-	
 
-</ul>
+

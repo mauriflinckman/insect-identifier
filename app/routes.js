@@ -5,6 +5,70 @@ var Insect           = require('./models/insect');
 var fs = require('fs');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+var multer = require('multer');
+
+/*
+app.use(multer({ 
+	dest: './app/public/images/',
+	rename: function (fieldname, filename) {
+		console.log("renaming");
+    return filename.replace(/\W+/g, '-').toLowerCase() + Date.now();
+  	},
+  	onParseStart: function() {
+		console.log("parsing started");  	
+  	},
+  	onFileUploadStart: function onFileUploadStart(file) {
+		console.log("file upload started");  	
+  	}
+
+  }).single('photo'));
+*/
+/*
+var upload = multer({ 
+	dest: __dirname, 
+	rename: function (fieldname, filename) {
+		console.log("renaming");
+    	return filename.replace(/\W+/g, '-').toLowerCase() + Date.now()
+  	},
+  	onParseStart: function() {
+		console.log("parsing started");  	
+  	},
+  	onFileUploadStart: function onFileUploadStart(file) {
+		console.log("file upload started");  	
+  	}
+ });
+ */  
+
+var storage	=	multer.diskStorage({
+  destination: function (req, file, callback) {
+  		console.log("destination: "+__dirname+"/public/images/kovakuoriaiset");
+    callback(null, __dirname+'/public/images/kovakuoriaiset');
+  },
+  
+  filename: function (req, file, callback) {
+  	 console.log("renaming file.");
+  	 console.log("file name: "+file.originalname);
+    callback(null, file.originalname);
+  }
+});
+var upload = multer({ storage : storage});
+
+function fileFilter (req, file, cb) {
+	/*
+  // The function should call `cb` with a boolean
+  // to indicate if the file should be accepted
+
+  // To reject this file pass `false`, like so:
+  cb(null, 0);
+
+  // To accept the file pass `true`, like so:
+  cb(null, 1);
+
+  // You can always pass an error if something goes wrong:
+  cb(new Error('I don\'t have a clue!'))
+*/
+}
+
 
 // img path
 var imgPath = __dirname+'/public/images/Carabus nemoralis lehtokiitäjäinen tv20130514_009.jpg';
@@ -45,15 +109,53 @@ module.exports = function(app, passport) {
 	});
 });
 
+app.post('/insect/insert', upload.array('userPhotos', 10), function(req, res) {
+	console.log("uploading insect");
+	var newInsect = new Insect();
+	
+	console.log("image: "+req.files[0]);
+	if (req.files.length>1) {
+		console.log("image2: "+req.files[1]);
+		
+	}
+	for (var ind in req.files) {
+		console.log("file ind: "+ind);
+		newInsect.images.push('images/kovakuoriaiset/'+req.files[ind].originalname);	
+	}
+	//console.log("image name: "+req.file.originalname);
+
+	console.log("wiki: "+req.body.wiki);
+	newInsect.latinName=req.body.latinName;
+	newInsect.legs=req.body.legs;
+	newInsect.territory=req.body.territory;
+	newInsect.primaryColor=req.body.primaryColor;
+	newInsect.secondaryColor=req.body.secondaryColor;
+	newInsect.wiki=req.body.wiki;
+	newInsect.name=req.body.name;
+	if (req.body.imageLinks) {
+		console.log("imagelinks: "+req.body.imageLinks);
+		var imageUrls = req.body.imageLinks.split(',');	
+		
+		for (var ind in imageUrls)		
+			newInsect.images.push(imageUrls[ind]);
+	}
+	newInsect.category=req.body.category;
+		
+ 	console.log('newInsect: '+newInsect);
+ 	newInsect.save(function (err) {
+ 		if (err) throw err;
+ 		console.log('Insect saved');
+ 		res.redirect("/#/main");
+ 	});	
+
+});
+
 app.get('/populate_db', function(req, res) {
 	 console.log('populate_db');
 	 fs.readFile(__dirname+'/public/insects/kovakuoriaiset.json', 'utf8', function (err, data) {
 	
 		
 		 var insects = JSON.parse(data);
-		 //console.log(insects);
-		 //res.send(insects);
-		 //insects.splice(1, 1);
 		 var i = 0;
 		 console.log('insects.length: '+ insects.length);
 			 
@@ -81,7 +183,7 @@ app.get('/populate_db', function(req, res) {
 				newInsect.primaryColor=insect['PrimaryColor'];
 				newInsect.secondaryColor=insect['SecondaryColor'];
 				newInsect.wiki=insect['Wiki'];
-				newInsect.image=insect['Image'];
+				newInsect.images.push(insect['Image']);
 				newInsect.category=insect['Category'];
 				
 		 		
@@ -100,15 +202,6 @@ app.get('/populate_db', function(req, res) {
  
 app.get('/insect/search', function (req, res) {
 	
-/*	
-	var filteredQuery = {},
-  		acceptableFields = ['primaryColor', 'secondaryColor', 'category', 'legs' ];
-  		
-
-	if(typeof req.query[acceptableFields[0]] == 'undefined' && typeof req.query[acceptableFields[1]] == 'undefined' && 
-		typeof req.query[acceptableFields[2]] == 'undefined' && typeof req.query[acceptableFields[3]] == 'undefined') 
-		res.redirect("/insect/list");
-	*/	
 	var primaryColor = req.query.primaryColor;	
 	var secondaryColor = req.query.secondaryColor;
 	var category =req.query.category;
@@ -135,65 +228,6 @@ app.get('/insect/search', function (req, res) {
 		console.log(JSON.stringify(insects));
 		res.send(insects);
 	});
-	/*
-	for (int i = 0; i < acceptableFields.length; i++) {
-		acceptableFields[i]
-	}
-	
-	console.log("querying");
-	var query = Insect.find(filteredQuery);
-	
-	console.log("searching...  ");
-	query.exec(function(err, insects) {
-		if (err) throw err;
-		console.log(insects);
-		res.send(insects);
-	});*/
-	
-
-	
-	/*
-	console.log('query: '+query);
-		console.log("searching...  ");	
-	if (req.query.primaryColor && req.query.category) {
-		Insect.find({$and: [{primaryColor: {$eq:req.query.primaryColor}}, {category: {$eq: req.query.category}}]},
-		 	function(err, insects) {
-		
-			//console.log("insects: "+insects);
-			if (err) throw err;
-			console.log("insects: "+insects);
-			res.send(insects);		
-		});
-	}*/
-
-	/*
-	if (req.query.primaryColor && !req.query.category) {
-		Insect.find( {primaryColor: {$eq:req.query.primaryColor}},
-		 	function(err, insects) {
-		
-			//console.log("insects: "+insects);
-			if (err) throw err;
-			console.log("insects: "+insects);
-			res.send(insects);		
-		});
-	}	*/
-	
-	
-	
-		
-
-		//query: {primaryColor: {$eq:"Green"}},{category: {$eq: "Beetle"}}
-
-	//Insect.find({$and: [query]}, function(err, insects) {
-/*		Insect.find({$and: [{primaryColor: {$eq:"Green"}}, {category: {$eq: "Beetle"}}]},
-		 function(err, insects) {
-		
-		//console.log("insects: "+insects);
-		if (err) throw err;
-		console.log("insects: "+insects);
-		res.send(insects);		
-	});*/
-
 	
 }); 
  
@@ -213,26 +247,43 @@ app.get('/insect/search', function (req, res) {
  
  app.get('/collection/list', function(req, res) {
 	 	if (req.isAuthenticated()) {
-	 	Compendium.findOne({'_user': req.user.id}, function (err, compendium) {
-    		if (err) {
-				console.log(err);
-			} 
-    		    	
-			console.log('found compendium: '+compendium);
+		 	Compendium.findOne({'_user': req.user.id}, function (err, compendium) {
+	    		if (err) {
+					console.log(err);
+				} 
+	    		    	
+				console.log('found compendium: '+compendium);
+				console.log("insects in compendium: "+JSON.stringify(compendium.insects));
+				// find the insects
+				var ids=compendium.insects;
+				console.log("ids: "+ids);			                             
+
+				Insect.find().where('_id').in(ids).sort('category').exec(function(err, results) {
+					if (err) throw err;
+					console.log("results: "+results);
+					res.send(results);
+				});
 			
-			// find the insects
-			                              
-			Insect.find({"_id":	{$in: compendium.insects}}, function (err, insects) {
-				if (err) throw err;
-				
-				console.log('found insects in a user collection');
-				
-				res.send(insects);
-			})
-    	});
-    }
-    	
+    		});
+    	}
+    		
  });
+
+app.get("/collection/remove", function (req, res) {
+	//console.log("removeing collection.");
+	//Collection.remove(function(err) {});
+	console.log("searching user's compendium");
+	Compendium.findOne({'_user': req.user.id}, function(err, compendium) {
+		compendium.insects=[];
+		console.log("saving compendium");
+		compendium.save(function (err) {
+			console.log("compendium:"+compendium);
+			console.log('saved compendium. ');
+			res.redirect('#/main');		
+		});	
+	});
+}); 
+ 
  app.get('/collection/insert', function(req, res) {
 	//Compendium.remove(function(err) {});		
 		User.findOne({ 'local.email' :  req.user.email}, function(err, user) {
@@ -284,7 +335,19 @@ app.get('/insect/search', function (req, res) {
  		
  	});
 	 
-
+	app.get('/currentUser', function(req, res) {
+		if (req.isAuthenticated()) {
+			
+			var _user = {};
+			_user = req.user;
+			console.log('current user: '+req.user);
+			res.send(_user);
+		}
+		else 
+			res.send(null);
+	});
+		
+	
 	 // =====================================
     // HOME PAGE (with login links) ========
     // =====================================
@@ -320,6 +383,7 @@ app.get('/insect/search', function (req, res) {
 			
 			
     });
+
 
     // =====================================
     // LOGIN ===============================

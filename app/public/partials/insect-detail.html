@@ -1,21 +1,48 @@
 <table >
 <tr> <td align="center">
-<p>Name: {{insect.name}}</p>
-<p> Latin name: {{insect.latinName}}</p>
+<p>{{translations.NAME}}: {{insect.name}}</p>
+<p> {{translations.LATINNAME}}: {{insect.latinName}}</p>
+
 </td></tr>
 
-<tr><td align="center"><p>Description: {{description}}</p></td></tr>
-<tr><td align="center"><img align="middle" ng-src="{{insect.image}}" /> </td></tr> 
-
-<select ng-model="prevUrl" id="selection"><option value={{prevUrl}}>search<option value="#/collection">collection</select>
+<tr><td align="center"><p>{{translations.DESCRIPTION}}: {{description}}</p></td></tr>
 <tr><td align="center">
+	
+	<div ng-if="insect.images.length > 1"> 
+
+		<div class="phone-images">
+			 <img ng-src="{{img}}" 
+			 	class="phone" ng-repeat="img in insect.images" 
+			 	ng-class="{active: mainImageUrl==img}"/>
+		</div>
+	</div>
+	<div ng-if="insect.images.length ==1">
+		<div class="phone-image">
+
+			 <img ng-src="{{img}}" 
+			 	class="phone" ng-repeat="img in insect.images" 
+			 	ng-class="{active: mainImageUrl==img}"/>
+		</div>
+	</div>
+	<div ng-if="insect.images.length > 1">
+		<ul class="insect-thumbs">
+		  	<li ng-repeat="img in insect.images">
+		 		<img ng-src="{{img}}" ng-click="setImage(img)"/>
+		  	</li>
+		</ul>
+	</div>
+ </td></tr> 
+
+<p ng-model="prevUrl" value={{prevUrl}}></p>
+<tr><td align="center">
+<br>
 <div ng-switch="prevUrl">
   <div ng-switch-when="#/list">
-     <input type="button" value="New search" ng-click="new_search()"/>
-		<input type="button" value="Add to collection" ng-click="add_to_collection()"/>
+     <input type="button" class="button button1" value="{{translations.NEWSEARCH}}" ng-click="new_search()"/>
+		<input type="button" class="button" value="{{translations.ADDTOCOLLECTION}}" ng-click="add_to_collection()"/>
   </div>
   <div ng-switch-when="#/collection">
-     <input type="button" value="Return to collection" ng-click="collection()"/>
+     <input type="button" class="button button1" value="{{translations.RETURNTOCOLLECTION}}" ng-click="collection()"/>
   </div>
   <div ng-switch-default>
      <h1>Switch</h1>
@@ -23,27 +50,5 @@
   </div>
 </div>
 </td></tr>
-<!--
-<div ng-switch="selection">
-	<div ng-switch-when="search">
-		<div >
-			<tr ><td align="center">
-			<input type="button" value="New search" ng-click="new_search()"/>
-			
-			</td></tr>
-		</div>
-	<div ng-switch-when="collection"> 
-		<div>
-			<tr><td align="center">
-			
-			</td></tr>
-		</div>
-	</div>
-	<div ng-switch-default>
-	<tr><td align="center">
-	Default switch
-	</td></tr>
-	</div>
-</div>
--->
+
 </table>

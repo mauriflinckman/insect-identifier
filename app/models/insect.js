@@ -12,7 +12,8 @@ var InsectSchema = new Schema({
 	secondaryColor: String,
 	legs: Number,
 	category: String,
-	image: String,
+	images: [String],
+	imageLinks: [String],
 });
 
 //module.exports = mongoose.model('Insect', InsectSchema);

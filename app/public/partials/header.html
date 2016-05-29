@@ -1,0 +1,6 @@
+<div align="center">
+	<a href="#/main">{{translations.HOME}}</a>
+   <a ng-if="currentUser" href="logout"> {{translations.LOGOUT}}</a>
+   <a ng-if="!currentUser" href="login"> {{translations.LOGIN}}</a>
+	{{translations.LANGUAGE}} <a href="" ng-click="setLanguage('en')">En</a> <a href="" ng-click="setLanguage('fi')">Fi</a>  
+</div>

@@ -1,0 +1,96 @@
+
+
+
+<form align="center" action="/insect/insert"  enctype="multipart/form-data" method="post">
+	<table align="center">
+	<tr><td width="10%">{translations.NAME}}: </td><td><input type="text" name="name" ng-model="user.name"/> 	</td></tr>
+	<tr><td width="10%">{translations.LATINNAME}}:</td><td> <input type="text" name="latinName" ng-model="user.latinName"/>
+	</td></tr>
+	
+	<tr><td width="10%">	{{translations.CATEGORY}}:</td>
+		<td>
+      <select name="category" ng-model="user.category">
+			<option value="Ant">ant</option>        
+        	<option value="Beetle">beetle</option>
+        	<option value="Butterfly">butterfly</option>
+        	<option value="Caterpillar">caterpillar</option>        
+      	<option value="Spider">spider</option>
+	      
+	   </select>
+	</td></tr>
+	   
+	<tr><td width="10%"> {{translations.PRIMARYCOLOR}}:</td>
+      <td>
+      <select name="primaryColor" ng-model="user.primaryColor">
+     <option value="Black">{{translations.BLACK}}</option>
+        <option value="Blue">{{translations.BLUE}}</option>
+        <option value="Brown">{{translations.BROWN}}</option>
+        <option value="Golden">{{translations.GOLDEN}}</option>
+        <option value="Green">{{translations.GREEN}}</option>
+			<option value="Orange">{{translations.ORANGE}}</option>
+        <option value="Red">{{translations.RED}}</option>
+        <option value="Silver">{{translations.SILVER}}</option>
+        <option value="Turquoise">{{translations.TURQUOISE}}</option>
+        <option value="Violet">{{translations.VIOLET}}</option>
+        <option value="Yellow">{{translations.YELLOW}}</option>
+      </select></td>
+     </tr>
+      <tr><td width="10%"> {{translations.SECONDARYCOLOR}}:</td> 
+      <td>
+     <select name="secondaryColor"  ng-model="user.secondaryColor">
+     <option value="Black">{{translations.BLACK}}</option>
+        <option value="Blue">{{translations.BLUE}}</option>
+        <option value="Brown">{{translations.BROWN}}</option>
+        <option value="Golden">{{translations.GOLDEN}}</option>
+        <option value="Green">{{translations.GREEN}}</option>
+			<option value="Orange">{{translations.ORANGE}}</option>
+        <option value="Red">{{translations.RED}}</option>
+        <option value="Silver">{{translations.SILVER}}</option>
+        <option value="Turquoise">{{translations.TURQUOISE}}</option>
+        <option value="Violet">{{translations.VIOLET}}</option>
+        <option value="Yellow">{{translations.YELLOW}}</option>
+		</td></tr>
+		<tr><td width="10%"> {{translations.NUMBEROFLEGS}}:</td>
+		<td> 
+      <select name="legs" ng-model="user.legs">
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="6">6</option>
+        <option value="8">8</option>
+
+      </select>   
+	</td></tr>
+	<tr><td width="10%">	{{translations.WIKIENTRY}}:</td>
+	<td> <input type="text" name="wiki" ng-model="user.wiki"/>
+	</td></tr>
+	  	<tr><td width="10%">
+	 {{translations.SELECTANIMAGETOUPLOAD}}:
+ 	<input type="file" name="userPhotos" file-model="myFile"/>
+  	</td></tr>
+	
+	<tr><td>  	
+	{{translations.IMAGELINKS}}:  
+  	
+  	<textarea name="imageLinks" ng-model="user.imageLinks"></textarea>
+  	</td></tr>  	
+  	
+  	<tr><td>
+	<input type="submit" class="button" value="{{translations.UPLOADINSECT}}">
+  
+  	</td></tr>
+  	</table>
+ </form>
+  	  	
+  	<!--
+<tr><td>
+	Through angular.
+	<form ng-submit="uploadFile()" enctype="multipart/form-data" method="post">
+    <input type="file" name="userPhoto" file-model="myFile"/>
+
+    <input type="submit" value="Upload photo"/>
+</form>
+
+</td></tr>
+-->
+
+
