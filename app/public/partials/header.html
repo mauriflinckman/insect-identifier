@@ -2,5 +2,5 @@
 	<a href="#/main">{{translations.HOME}}</a>
    <a ng-if="currentUser" href="logout"> {{translations.LOGOUT}}</a>
    <a ng-if="!currentUser" href="login"> {{translations.LOGIN}}</a>
-	{{translations.LANGUAGE}} <a href="" ng-click="setLanguage('en')">En</a> <a href="" ng-click="setLanguage('fi')">Fi</a>  
+	{{translations.LANGUAGE}} <div class="text" ng-if="lang=='en'">En <a href="" ng-click="setLanguage('fi')">Fi</a></div> <div class="text" ng-if="lang=='fi'"><a href="" ng-click="setLanguage('en')">En</a> Fi</div>    
 </div>

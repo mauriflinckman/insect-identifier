@@ -1,25 +1,6 @@
 /* Directives */
 
 var myApp = angular.module('insectIdentifierApp');
-/*
-angular.module('phonecatApp', [])
-  .controller('UploadInsectCtrl', ['$scope', function($scope) {
-    $scope.customer = {
-      name: 'Naomi',
-      address: '1600 Amphitheatre'
-    };
-  }])
-  .directive('myCustomer', function() {
-    console.log("from directive.");
-    return {
-    
-      restrict: 'E',
-		template: 'Name: {{customer.name}} Address: {{customer.address}}'
-      //templateUrl: 'my-customer.html'
-    };
-  });
-};
-*/
 
 myApp.directive('fileModel', ['$parse', function ($parse) {
 return {
@@ -66,13 +47,13 @@ myApp.directive('header', function () {
         		function ($scope, $filter,	$cookies, UserRestService, Auth, TranslationService, $location, $route) {
 		    	console.log('header directive.');
 		    	$scope.location=$location;
-
+				$scope.lang=$cookies.get('lang');
+				
 		    	if (!$cookies.get('lang')) {
 					console.log('no lang chosen.');
 					$cookies.put('lang', 'en');	    	
 		    	}
 
-				//TranslationService.getTranslation($scope, $cookies.get('lang'), 'header');		    	
 		    	TranslationService.getTranslation($scope, $cookies.get('lang'), '');
 		    			    	
 		    	UserRestService.requestCurrentUser(function (data) {
@@ -87,22 +68,12 @@ myApp.directive('header', function () {
 					 $cookies.put('lang', lang);
 					 console.log('lang: '+lang);
 					 TranslationService.getTranslation($scope, $cookies.get('lang'), '');
+					 $scope.lang=lang;
 				 	 $route.reload();																																																																																																																																																																																																																																																																																																												
 				    		
 				}
-				            
 				  
         }]
     }
 });
-
-
-myApp.directive('myCustomer', function() {
-	console.log("from directive.");
-  return {
-    template: 'Naomi Amphitheatre.'
-  };
-});
-
-
 

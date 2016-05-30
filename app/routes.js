@@ -9,8 +9,8 @@ var multer = require('multer');
 
 var storage	=	multer.diskStorage({
   destination: function (req, file, callback) {
-  		console.log("destination: "+__dirname+"/public/images/kovakuoriaiset");
-    callback(null, __dirname+'/public/images/kovakuoriaiset');
+  		console.log("destination: "+__dirname+"/public/images/");
+   	callback(null, __dirname+'/public/images/');
   },
   
   filename: function (req, file, callback) {
@@ -88,7 +88,7 @@ app.post('/insect/insert', upload.array('userPhotos', 10), function(req, res) {
 	}
 	for (var ind in req.files) {
 		console.log("file ind: "+ind);
-		newInsect.images.push('images/kovakuoriaiset/'+req.files[ind].originalname);	
+		newInsect.images.push('images/'+req.files[ind].originalname);	
 	}
 	//console.log("image name: "+req.file.originalname);
 
@@ -164,7 +164,7 @@ app.get('/populate_db', function(req, res) {
 	     }
 	  });  		 
 	 });
-	 res.sendFile('index.html');
+	 res.redirect('/#/main');
 	  	
  });	
  

@@ -4,9 +4,13 @@ Registered users may upload new insects.
 Supports LocalStorage.
   
 ## Installation
+
 npm install
 
 ## Quick start
+
 npm start
 
 http://localhost:3000/login
+
+To reset a test database: http://localhost:3000/populate_db

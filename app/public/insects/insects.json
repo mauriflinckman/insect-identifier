@@ -1,14 +1,25 @@
 [
 {
+	"Name":	"neitoperhonen",
+	"LatinName": "Aglais io",
+	"Category":	"Butterfly",
+	"Legs":	"4",
+	"PrimaryColor": "Red",
+	"SecondaryColor": "Black",
+	"Territory": "",
+	"Image": "images/Aglais_io.jpeg",
+	"Wiki": "Aglais_io"
+},
+
+{
 	"Name":	"lehtokiitäjäinen",
 	"LatinName": "Carabus nemoralis",
 	"Category":	"Beetle",
 	"Legs":	"6",
 	"PrimaryColor": "Black",
 	"SecondaryColor": "Violet",
-	"Territory": "SouthFinland MiddleFinland",
-	"Size":	"22-28",
-	"Image": "images/kovakuoriaiset/Carabus nemoralis lehtokiitäjäinen tv20130514_009.jpg",
+	"Territory": "",
+	"Image": "images/Carabus nemoralis lehtokiitäjäinen tv20130514_009.jpg",
 	"Wiki": "Carabus_nemoralis"
 },
 
@@ -19,9 +30,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Orange",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"22-28",
-"Image": "images/kovakuoriaiset/Badister bullatus mäkiloimukiitäjäinen tv20140519_034.jpg"
+"Territory": "",
+"Image": "images/Badister bullatus mäkiloimukiitäjäinen tv20140519_034.jpg"
 },
 
 {
@@ -31,9 +41,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Orange",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"22-28",
-"Image": "images/kovakuoriaiset/Cantharis pellucida kaunosylkikuoriainen tv20140603_002.jpg",
+"Territory": "",
+"Image": "images/Cantharis pellucida kaunosylkikuoriainen tv20140603_002.jpg",
 "Wiki": "Cantharis"
 },
 
@@ -45,9 +54,8 @@
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"22-28",
-"Image": "images/kovakuoriaiset/Poecilus versicolor Vihersysikiitäjäinen tv20140418_008.jpg",
+"Territory": "",
+"Image": "images/Poecilus versicolor Vihersysikiitäjäinen tv20140418_008.jpg",
 "Wiki":"poecilus_versicolor"
 },
 
@@ -59,9 +67,8 @@
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"22-28",
-"Image": "images/kovakuoriaiset/Poecilus cupreus vaskisysikiitäjäinen tv20140427_043.jpg",
+"Territory": "",
+"Image": "images/Poecilus cupreus vaskisysikiitäjäinen tv20140427_043.jpg",
 "Wiki": "Poecilus cupreus"
 },
 
@@ -72,9 +79,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Golden",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"22-28",
-"Image": "images/kovakuoriaiset/Agapanthia villosoviridescens härmejäärä tv20110629_038.jpg",
+"Territory": "",
+"Image": "images/Agapanthia villosoviridescens härmejäärä tv20110629_038.jpg",
 "Wiki": "Agapanthia villosoviridescens"
 },
 
@@ -85,9 +91,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Orange",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"22-28",
-"Image": "images/kovakuoriaiset/Brachyta interrogationis juomujäärä tv20120613_001.jpg",
+"Territory": "",
+"Image": "images/Brachyta interrogationis juomujäärä tv20120613_001.jpg",
 "Wiki": "Brachyta_interrogationis"
 },
 
@@ -98,9 +103,8 @@
 "Legs":	"6",
 "PrimaryColor": "Yellow",
 "SecondaryColor": "Black",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Cimex_lectularius",
 "Wiki": "Cimex_lectularius"
 },
 
@@ -111,9 +115,8 @@
 "Legs":	"6",
 "PrimaryColor": "Red",
 "SecondaryColor": "Black",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Pyrrocoris_apterus",
 "Wiki": "Pyrrocoris_apterus"
 },
 
@@ -124,9 +127,8 @@
 "Legs":	"6",
 "PrimaryColor": "Brown",
 "SecondaryColor": "Yellow",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Picromerus_bidens",
 "Wiki": "Picromerus_bidens"
 },
 
@@ -137,9 +139,8 @@
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Blue",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Graphosoma_italicum",
 "Wiki": "Graphosoma_italicum"
 },
 
@@ -150,9 +151,8 @@
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Blue",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Eurýdema_oleraceum",
 "Wiki": "Eurýdema_oleraceum"
 },
 
@@ -163,9 +163,8 @@
 "Legs":	"6",
 "PrimaryColor": "Yellow",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Lepyronia_coleoprata",
 "Wiki": "Lepyronia_coleoprata"
 },
 
@@ -176,9 +175,8 @@
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Green",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Hyalopterus_pruni",
 "Wiki": "Hyalopterus_pruni"
 },
 
@@ -189,9 +187,8 @@
 "Legs":	"6",
 "PrimaryColor": "Brown",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Aulacaspis_rosae",
 "Wiki": "Aulacaspis_rosae"
 },
 
@@ -202,9 +199,8 @@
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Yellow",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Cicindela_campestris",
 "Wiki": "Cicindela_campestris"
 },
 
@@ -215,9 +211,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Black",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Clivina_fossor",
 "Wiki": "Clivina_fossor"
 },
 
@@ -228,9 +223,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Blue",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Harpalus_aeneus",
 "Wiki": "Harpalus_aeneus"
 },
 
@@ -241,10 +235,9 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Yellow",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
-"Wiki": "Gyrinus substriatus"
+"Territory": "",
+"Image": "images/Gyrinus_substriatus",
+"Wiki": "Gyrinus_substriatus"
 },
 
 {
@@ -254,9 +247,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Red",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Stenus_caesareus",
 "Wiki": "Stenus_caesareus"
 },
 
@@ -267,9 +259,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Staphylinus_caesareus",
 "Wiki": "Staphylinus_caesareus"
 },
 
@@ -280,9 +271,8 @@
 "Legs":	"6",
 "PrimaryColor": "Brown",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Clariger_testaceus",
 "Wiki": "Clariger_testaceus"
 },
 
@@ -293,9 +283,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Thanasimus_formicarius",
 "Wiki": "Thanasimus_formicarius"
 },
 
@@ -306,9 +295,8 @@
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Green",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Meligethes_aeneus",
 "Wiki": "Meligethes_aeneus"
 },
 
@@ -319,9 +307,8 @@
 "Legs":	"6",
 "PrimaryColor": "Red",
 "SecondaryColor": "Black",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Coccinella_septempunctata",
 "Wiki": "Coccinella_septempunctata"
 },
 
@@ -332,9 +319,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Chilocorus_renipustulatus",
 "Wiki": "Chilocorus_renipustulatus"
 },
 
@@ -345,9 +331,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Dermestes_lardarius",
 "Wiki": "Dermestes_lardarius"
 },
 
@@ -358,9 +343,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Black",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Attagenus_pellio",
 "Wiki": "Attagenus_pellio"
 },
 
@@ -371,9 +355,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Red",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Necrophorus_vespillo",
 "Wiki": "Necrophorus_vespillo"
 },
 
@@ -384,9 +367,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Black",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Necrophorus_humator",
 "Wiki": "Necrophorus_humator"
 },
 
@@ -397,9 +379,8 @@
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Oeceptoma_thoracicum",
 "Wiki": "Oeceptoma_thoracicum"
 },
 
@@ -410,9 +391,8 @@
 "Legs":	"4",
 "PrimaryColor": "Yellow",
 "SecondaryColor": "Blue",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Papilio_machaon",
 "Wiki": "Papilio_machaon"
 },
 
@@ -423,9 +403,8 @@
 "Legs":	"4",
 "PrimaryColor": "White",
 "SecondaryColor": "Red",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Parnassius_apollo",
 "Wiki": "Parnassius_apollo"
 },
 
@@ -436,9 +415,8 @@
 "Legs":	"4",
 "PrimaryColor": "White",
 "SecondaryColor": "Blue",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Pieris_brassicae",
 "Wiki": "Pieris_brassicae"
 },
 
@@ -449,9 +427,8 @@
 "Legs":	"4",
 "PrimaryColor": "White",
 "SecondaryColor": "Yellow",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Pieris_napi",
 "Wiki": "Pieris_napi"
 },
 
@@ -462,9 +439,8 @@
 "Legs":	"4",
 "PrimaryColor": "Yellow",
 "SecondaryColor": "Red",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Gonopteryx_rhamni",
 "Wiki": "Gonopteryx_rhamni"
 },
 
@@ -475,9 +451,8 @@
 "Legs":	"4",
 "PrimaryColor": "White",
 "SecondaryColor": "Green",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Aporia_crataeg",
 "Wiki": "Aporia_crataegi"
 },
 
@@ -488,9 +463,8 @@
 "Legs":	"4",
 "PrimaryColor": "White",
 "SecondaryColor": "Orange",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Anthocharis_cardamines",
 "Wiki": "Anthocharis_cardamines"
 },
 
@@ -501,9 +475,8 @@
 "Legs":	"4",
 "PrimaryColor": "Yellow",
 "SecondaryColor": "Brown",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Colias_palaeno",
 "Wiki": "Colias_palaeno"
 },
 
@@ -514,9 +487,8 @@
 "Legs":	"4",
 "PrimaryColor": "Black",
 "SecondaryColor": "Orange",
-"Territory": "SouthFinland MiddleFinland",
-"Size":	"",
-"Image": "",
+"Territory": "",
+"Image": "images/Limentis_populi",
 "Wiki": "Limentis_populi"
 }
 
