@@ -50,7 +50,9 @@
 	"SELECTANIMAGETOUPLOAD": "Valitse kuva(t)",
 	"COLLECTIONPAGE": "Kokoelma sivu",
 	"RETURNTOCOLLECTION": "Palaa kokoelmaan",
-	"NORESULTS": "Ei tuloksia"
+	"NORESULTS": "Ei tuloksia",
+	"ENGLISHNAME": "Englantilainen nimi",
+	"FINNISHNAME": "Suomalainen nimi"
 
 	
 }

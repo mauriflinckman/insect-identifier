@@ -9,8 +9,16 @@
 		<h2 ng-if="insects[0].category == 'Spider'">{{translations.Spider}}</h2>
 		<ul align="center" class="insect-thumbs">
 			<li ng-repeat="insect in insects">
-				<p> {{insect.name}}</p>
-				<img ng-src="{{insect.images[0]}}" ng-click="viewDetail(insect)"/>
+				
+				<div ng-repeat="translation in insect.names">
+					<p ng-if="translation.language==lang">
+					{{translation.name}}
+					</p>
+					<p>
+					{{insect.latinName}}
+					</p>
+				</div>
+				<img ng-src="{{insect.images[0]+'_thumb.jpg'}}" ng-click="viewDetail(insect)"/>
 			</li>
 		</ul>
 	</div>

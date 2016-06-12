@@ -50,5 +50,7 @@
 	"SELECTANIMAGETOUPLOAD": "Select image(s)",
 	"COLLECTIONPAGE": "Collection page",
 	"RETURNTOCOLLECTION": "Return to collection",
-	"NORESULTS": "No results"
+	"NORESULTS": "No results",
+	"ENGLISHNAME": "English name",
+	"FINNISHNAME": "Finnish name"
 }

@@ -16,7 +16,8 @@ insectIdentifierControllers.controller('UploadInsectCtrl', ['$scope', 'Search', 
 			     var fd = new FormData();
 			     console.log("file: "+file);
 			     fd.append('userPhotos', userPhotos);
-				  fd.append('name', name);
+				  fd.append('fiName', fiName);
+					fd.append('enName', enName);
 					fd.append('latinName', latinName);
 					fd.append('imageLinks', imageLinks);
 					fd.append('category', category);
@@ -50,7 +51,7 @@ insectIdentifierControllers.controller('InsectDetailCtrl', ['$scope', 'Search', 
 	  		$scope.prevUrl=Search.get().prevUrl;
 			$scope.insect=Search.get().insect;
 			console.log('prevUrl: '+$scope.prevUrl);
-	  		$("#selection").hide();
+			$scope.lang=$cookies.get('lang');
 	  		$scope.location=$location;
 	  	  		
 	  		//get the wiki description
@@ -80,13 +81,14 @@ insectIdentifierControllers.controller('InsectDetailCtrl', ['$scope', 'Search', 
 						// search matches
 						
 						var t = $localStorage.collection[$scope.insect.category];
-						console.log(t.length);
-						console.log(t[0].name);
+						
+						console.log(t);
+						//console.log(t[0].names[0].name);
 						for (var i = 0; i < t.length; i++) {
 							var lsInsect = t[i];
-							console.log(lsInsect.name);
+							console.log(lsInsect._id);
 							
-							if (lsInsect.name == $scope.insect.name) {
+							if (lsInsect._id == $scope.insect._id) {
 								console.log("found duplicate between localstorage and server data");
 								// found duplicate
 								duplicate = true;																					
@@ -103,7 +105,7 @@ insectIdentifierControllers.controller('InsectDetailCtrl', ['$scope', 'Search', 
 				}
 	 			else {
 					$localStorage.collection=[];
-					$localStorage.collection = nsectsByCategory;
+					$localStorage.collection = insectsByCategory;
 					$localStorage.collection[$scope.insect.category].push($scope.insect); 
 								
 	 			}
@@ -237,8 +239,7 @@ insectIdentifierControllers.controller('SearchCtrl', ['$scope', 'Search', '$loca
 
 insectIdentifierControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
   function($scope, Phone) {
-    $scope.phones = Phone.query();
-   
+    $scope.phones = Phone.query();   
     $scope.orderProp = 'age';
   }]);
 
@@ -256,38 +257,33 @@ insectIdentifierControllers.controller('PhoneDetailCtrl', ['$scope', '$routePara
 insectIdentifierControllers.controller('MainCtrl', ['$scope', 'Search', '$location', '$http', '$cookies', 
 	'TranslationService', function($scope, Search, $location, $http, $cookies, TranslationService) {
  			$scope.location=$location;
-			var lang =	$cookies.get('lang');
-			var page = 'main';
-			//a$scope.insect=Search.get().insect;
-			
-			//$scope.translations = Search.get().translations;
-			//alert($scope.translations);  				
-  			//alert('path: '+$scope.location.path());
-			//TranslationService.getTranslation($scope, lang, '');  		
-  		
+			$scope.collection=function() {
+				$scope.location.path('collection');
+			}
+			$scope.search=function() {
+				$scope.location.path('search');
+			}
+  			$scope.upload=function() {
+				$scope.location.path('insect/upload');
+			}
   }]);
   
-insectIdentifierControllers.controller('CollectionCtrl', ['$scope', 'Search', '$location', '$http', '$localStorage',
-	function($scope, Search, $location, $http, $localStorage) {
+insectIdentifierControllers.controller('CollectionCtrl', ['$scope', 'Search', '$location', 
+'$http', '$localStorage', "$cookies",
+	function($scope, Search, $location, $http, $localStorage, $cookies) {
 
-		$scope.categories = {'Ant': 0, 'Beetle':0, 'Butterfly': 0, 'Caterpillar': 0, 'Spider': 0};
-		$scope.insectsByCategory = {'Ant': [], 'Beetle':[], 'Butterfly': [], 'Caterpillar': [], 'Spider': []};	
-	  	//console.log('user.id: '+ req.user.id);
+		$scope.lang=$cookies.get('lang');
+		
 		if ($localStorage.collection ==  null) {	  	
 				$localStorage.collection = $scope.insectsByCategory;
 		}
-		console.log()
+
 		$http.get('/collection/list').success(function(data) {
 			// add items to the localstorage by category
 			
 			for (var ind in data) {
 				var insect = data[ind];
-				console.log($scope.categories[insect.category]);
-				$scope.categories[insect.category] = '1';
-				$scope.insectsByCategory[insect.category].push(insect);
-				console.log(insect.category);
-				var cat = insect.category;
-				console.log($localStorage.collection[insect.category]);
+				
 				
 				var duplicate  = 0;
 				console.log("localStorage: "+JSON.stringify($localStorage));
@@ -308,7 +304,6 @@ insectIdentifierControllers.controller('CollectionCtrl', ['$scope', 'Search', '$
 				if (!duplicate)	
 					$localStorage.collection[insect.category].push(insect);
 			}			
-			console.log($scope.categories);
 			console.log(JSON.stringify($localStorage.collection['Butterfly']));
 				    				
 		}).error(function(){

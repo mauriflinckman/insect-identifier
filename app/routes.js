@@ -6,6 +6,7 @@ var fs = require('fs');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var multer = require('multer');
+var im = require('imagemagick');
 
 var storage	=	multer.diskStorage({
   destination: function (req, file, callback) {
@@ -77,6 +78,7 @@ module.exports = function(app, passport) {
 	});
 });
 
+/* Upload insect */
 app.post('/insect/insert', upload.array('userPhotos', 10), function(req, res) {
 	console.log("uploading insect");
 	var newInsect = new Insect();
@@ -99,7 +101,12 @@ app.post('/insect/insert', upload.array('userPhotos', 10), function(req, res) {
 	newInsect.primaryColor=req.body.primaryColor;
 	newInsect.secondaryColor=req.body.secondaryColor;
 	newInsect.wiki=req.body.wiki;
-	newInsect.name=req.body.name;
+	
+	var translations=[];
+	translations.push({"language": "en", "name": req.body.enName});
+	translations.push({"language": "fi", "name": req.body.fiName});
+	newInsect.names=translations;
+	
 	if (req.body.imageLinks) {
 		console.log("imagelinks: "+req.body.imageLinks);
 		var imageUrls = req.body.imageLinks.split(',');	
@@ -108,6 +115,22 @@ app.post('/insect/insert', upload.array('userPhotos', 10), function(req, res) {
 			newInsect.images.push(imageUrls[ind]);
 	}
 	newInsect.category=req.body.category;
+		
+	// thumb picture
+	for (var i = 0; i< req.files.length; i++) {
+		var file = req.files[i];
+		console.log("destination: "+file.destination+file.filename);
+		im.resize({
+  			srcPath: file.destination+file.filename,
+  			dstPath: file.destination+file.filename+"_thumb.jpg",
+  			width:   100,
+  			height: 100
+		}, function(err, stdout, stderr) {
+  		if (err) throw err;
+  			console.log('resized file: '+file.filename);
+		});		
+	}
+	
 		
  	console.log('newInsect: '+newInsect);
  	newInsect.save(function (err) {
@@ -120,6 +143,9 @@ app.post('/insect/insert', upload.array('userPhotos', 10), function(req, res) {
 
 app.get('/populate_db', function(req, res) {
 	 console.log('populate_db');
+
+
+	 console.log('reading insects json');
 	 fs.readFile(__dirname+'/public/insects/insects.json', 'utf8', function (err, data) {
 	
 		
@@ -136,15 +162,26 @@ app.get('/populate_db', function(req, res) {
         	}
     	}
     	 
-	 // empty the collection
-    Insect.remove(function (err) {
-    	 if (err) throw err;
-		 for (var i=0; i< insects.length; i++) {
+	 	// empty the collection
+    	Insect.remove(function (err) {
+	    	 if (err) throw err;
+			 for (var i=0; i< insects.length; i++) {
 		 		var insect = insects[i]; 
+
 		
-		 		console.log(insect['Name']+ ' '+insect.Name);
+				
 		 		var newInsect = new Insect();
-				newInsect.name=insect['Name'];
+		 		
+			
+				newInsect.names=[];
+				for (var j = 0; j < insect['names'].length; j++) {
+					var translation={};
+					translation.name=insect['names'][j].name;
+					translation.language=insect['names'][j].language;
+					newInsect.names.push(translation);							
+				}				
+				
+					
 				newInsect.latinName=insect['LatinName'];
 				newInsect.legs=insect['Legs'];
 				newInsect.territory=insect['Territory'];
@@ -161,9 +198,11 @@ app.get('/populate_db', function(req, res) {
 		 			console.log('Insect saved');
 		 		});
 		 		
-	     }
-	  });  		 
+		     }
+	 	 });  		 
 	 });
+	 
+    
 	 res.redirect('/#/main');
 	  	
  });	
@@ -174,22 +213,46 @@ app.get('/insect/search', function (req, res) {
 	var secondaryColor = req.query.secondaryColor;
 	var category =req.query.category;
 	var legs = req.query.legs;
-	
+	console.log('primaryColor: '+req.query.primaryColor+' ,secondaryColor: '+req.query.secondaryColor+', legs:'+req.query.legs);
 	var query = Insect.find();
+	if (req.query.category) {
+		query.where('category').equals(category);	
+	}	
 	if (req.query.primaryColor) {
 		query.where('primaryColor').equals(primaryColor);	
 	}	
-	if (req.query.SecondaryColor) {
+	if (req.query.secondaryColor) {
 		query.where('secondaryColor').equals(secondaryColor);	
-	}	
-	if (req.query.category) {
-		query.where('category').equals(category);	
 	}	
 	if (req.query.legs) {
 		query.where('legs').equals(legs);	
 	}	
 	
 	console.log("searching");
+	/*
+	var primaryColor = req.query.primaryColor;
+	var legs = req.query.legs;
+	if (legs==undefined)
+		legs='';
+		/*{primaryColor: {$eq: req.query.primaryColor}}, 
+		{secondaryColor: {$eq: req.query.secondaryColor}}, 
+		{category: {$eq: req.query.category}}, {legs: {$eq: legs}}
+		
+	var search='{primaryColor: {$eq: '+req.query.primaryColor+'}},'+
+		'{secondaryColor: {$eq: '+req.query.secondaryColor+'}},'+ 
+		'{category: {$eq: '+req.query.category+'}}, {legs: {$eq: '+legs+'}}';
+	if (req.query.primaryColor && req.query.secondaryColor && req.query.category && req.query.legs) {
+		Insect.find({$and: [{$and: [{req.query.primaryColor: {$exists: true}}, {primaryColor: {$eq: req.query.primaryColor}}], 
+			[{secondaryColor: {$exists: true}}, {secondaryColor: {$eq: req.query.secondaryColor}}]
+			[{category: {$exists: true}}, {category: {$eq: req.query.category}}],
+			[{legs: {$exists: true}}, {legs: {$eq: req.query.legs}}]}], function(err, insects) {
+				if (err) throw err;
+				console.log(insects);
+				console.log(JSON.stringify(insects));
+				res.send(insects);
+		});
+	} */
+	
 	query.exec(function(err, insects) {
 		if (err) throw err;
 		console.log(insects);
@@ -238,8 +301,7 @@ app.get('/insect/search', function (req, res) {
  });
 
 app.get("/collection/remove", function (req, res) {
-	//console.log("removeing collection.");
-	//Collection.remove(function(err) {});
+
 	console.log("searching user's compendium");
 	Compendium.findOne({'_user': req.user.id}, function(err, compendium) {
 		compendium.insects=[];
@@ -253,7 +315,7 @@ app.get("/collection/remove", function (req, res) {
 }); 
  
  app.get('/collection/insert', function(req, res) {
-	//Compendium.remove(function(err) {});		
+
 		User.findOne({ 'local.email' :  req.user.email}, function(err, user) {
 		
   			if (err) {

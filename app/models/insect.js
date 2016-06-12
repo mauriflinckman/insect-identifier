@@ -3,8 +3,7 @@ var ObjectId = require('mongodb').ObjectID;
 var Schema = mongoose.Schema;
 
 var InsectSchema = new Schema({
-
-	name: String,
+	names:[{language: String, name: String}],
 	latinName:String,
 	wiki: String,
 	territory: [String],
@@ -18,4 +17,5 @@ var InsectSchema = new Schema({
 
 //module.exports = mongoose.model('Insect', InsectSchema);
 
-module.exports = mongoose.model('insects', InsectSchema);
+module.exports = mongoose.model('insects', InsectSchema);	
+

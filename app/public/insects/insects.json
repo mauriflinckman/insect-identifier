@@ -1,6 +1,6 @@
 [
 {
-	"Name":	"neitoperhonen",
+	"names":	[{"language":	"fi",	"name": "Neitoperhonen"}],
 	"LatinName": "Aglais io",
 	"Category":	"Butterfly",
 	"Legs":	"4",
@@ -12,7 +12,7 @@
 },
 
 {
-	"Name":	"lehtokiitäjäinen",
+	"names":	[{	"language":	"fi",	"name": "Lehtokiitäjäinen"}],
 	"LatinName": "Carabus nemoralis",
 	"Category":	"Beetle",
 	"Legs":	"6",
@@ -24,7 +24,8 @@
 },
 
 {
-"Name":	"mäkiloimukiitäjäinen",
+"names":	[{"language":	"fi",
+	"name": "Mäkiloimukiitäjäinen"}],
 "LatinName": "Badister bullatus",
 "Category":	"Beetle",
 "Legs":	"6",
@@ -35,7 +36,8 @@
 },
 
 {
-"Name":	"kaunosylkikuoriainen",
+"names":	[{"language":	"fi",
+	"name": "Kaunosylkikuoriainen"}],
 "LatinName": "Cantharis pellucida",
 "Category":	"Beetle",
 "Legs":	"6",
@@ -48,7 +50,8 @@
 
 
 {
-"Name":	"vihersysikiitäjäinen",
+"names":	[{"language":	"fi",
+	"name": "Vihersysikiitäjäinen"}],
 "LatinName": "Poecilus versicolor",
 "Category":	"Beetle",
 "Legs":	"6",
@@ -61,7 +64,8 @@
 
 
 {
-"Name":	"vaskisysikiitäjäinen",
+"names":	[{"language":	"fi",
+	"name": "Vaskisysikiitäjäinen"}],
 "LatinName": "Poecilus cupreus",
 "Category":	"Beetle",
 "Legs":	"6",
@@ -73,7 +77,8 @@
 },
 
 {
-"Name":	"härmejäärä",
+"names":	[{"language":	"fi",
+	"name": "Härmejäärä"}],
 "LatinName": "Agapanthia villosoviridescens",
 "Category":	"Beetle",
 "Legs":	"6",
@@ -85,7 +90,8 @@
 },
 
 {
-"Name":	"juomujäärä",
+"names":	[{"language":	"fi",
+	"name": "Juomujäärä"}],
 "LatinName": "Brachyta interrogationis",
 "Category":	"Beetle",
 "Legs":	"6",
@@ -97,398 +103,431 @@
 },
 
 {
-"Name":	"lude",
+"names":	[{	"language":	"fi",
+	"name": "Lude"}],
 "LatinName": "Cimex lectulárius",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Yellow",
 "SecondaryColor": "Black",
 "Territory": "",
-"Image": "images/Cimex_lectularius",
+"Image": "images/Cimex_lectularius.jpg",
 "Wiki": "Cimex_lectularius"
 },
 
 {
-"Name":	"tulilude",
+"names":	[{	"language":	"fi",
+	"name": "Tulilude"}],
 "LatinName": "Pyrrocoris ápterus",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Red",
 "SecondaryColor": "Black",
 "Territory": "",
-"Image": "images/Pyrrocoris_apterus",
+"Image": "images/Pyrrocoris_apterus.jpg",
 "Wiki": "Pyrrocoris_apterus"
 },
 
 {
-"Name":	"parihammaslude",
+"names":	[{	"language":	"fi",
+	"name": "Parihammaslude"}],
 "LatinName": "Picromérus bidens",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Brown",
 "SecondaryColor": "Yellow",
 "Territory": "",
-"Image": "images/Picromerus_bidens",
+"Image": "images/Picromerus_bidens.jpg",
 "Wiki": "Picromerus_bidens"
 },
 
 {
-"Name":	"juovalude",
+"names":	[{	"language":	"fi",
+	"name": "Juovalude"}],
 "LatinName": "Graphosoma itálicum",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Blue",
 "Territory": "",
-"Image": "images/Graphosoma_italicum",
+"Image": "images/Graphosoma_italicum.jpg",
 "Wiki": "Graphosoma_italicum"
 },
 
 {
-"Name":	"kaalilude",
+"names":	[{	"language":	"fi",
+	"name": "Kaalilude"}],
 "LatinName": "Eurýdema oleráceum",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Blue",
 "Territory": "",
-"Image": "images/Eurýdema_oleraceum",
+"Image": "images/Eurýdema_oleraceum.jpg",
 "Wiki": "Eurýdema_oleraceum"
 },
 
 {
-"Name":	"vaahtokaskas",
+"names":	[{	"language":	"fi",
+	"name": "Vaahtokaskas"}],
 "LatinName": "Lepyronia coleopráta",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Yellow",
 "SecondaryColor": "Brown",
 "Territory": "",
-"Image": "images/Lepyronia_coleoprata",
+"Image": "images/Lepyronia_coleoprata.jpg",
 "Wiki": "Lepyronia_coleoprata"
 },
 
 {
-"Name":	"luumukirva",
+"names":	[{	"language":	"fi",
+	"name": "Luumukirva"}],
 "LatinName": "Hyalopterus pruni",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Green",
 "Territory": "",
-"Image": "images/Hyalopterus_pruni",
+"Image": "images/Hyalopterus_pruni.jpg",
 "Wiki": "Hyalopterus_pruni"
 },
 
 {
-"Name":	"ruusukilpikirva",
+"names":	[{	"language":	"fi",
+	"name": "Ruusukilpikirva"}],
 "LatinName": "Aulacaspis rosae",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Brown",
 "SecondaryColor": "Brown",
 "Territory": "",
-"Image": "images/Aulacaspis_rosae",
+"Image": "images/Aulacaspis_rosae.jpg",
 "Wiki": "Aulacaspis_rosae"
 },
 
 {
-"Name":	"kenttäkiitäjäinen",
+"names":	[{	"language":	"fi",
+	"name": "Kenttäkiitäjäinen"}],
 "LatinName": "Cicindela campestris",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Yellow",
 "Territory": "",
-"Image": "images/Cicindela_campestris",
+"Image": "images/Cicindela_campestris.jpg",
 "Wiki": "Cicindela_campestris"
 },
 
 {
-"Name":	"myyräkiitäjäinen",
+"names":	[{	"language":	"fi",
+	"name": "Myyräkiitäjäinen"}],
 "LatinName": "Clivina fossor",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Black",
 "Territory": "",
-"Image": "images/Clivina_fossor",
+"Image": "images/Clivina_fossor.jpg",
 "Wiki": "Clivina_fossor"
 },
 
 {
-"Name":	"metallikiitäjäinen",
+"names":	[{	"language":	"fi",
+	"name": "Metallikiitäjäinen"}],
 "LatinName": "Harpalus aeneus",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Blue",
 "Territory": "",
-"Image": "images/Harpalus_aeneus",
+"Image": "images/Harpalus_aeneus.jpg",
 "Wiki": "Harpalus_aeneus"
 },
 
 {
-"Name":	"hopeaseppä",
+"names":	[{	"language":	"fi",
+	"name": "Hopeaseppä"}],
 "LatinName": "Gyrinus substriatus",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Yellow",
 "Territory": "",
-"Image": "images/Gyrinus_substriatus",
+"Image": "images/Gyrinus_substriatus.jpg",
 "Wiki": "Gyrinus_substriatus"
 },
 
 {
-"Name":	"täplänupiainen",
+"names":	[{	"language":	"fi",
+	"name": "Täplänupiainen"}],
 "LatinName": "Stenus caesareus",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Red",
 "Territory": "",
-"Image": "images/Stenus_caesareus",
+"Image": "images/Stenus_caesareus.jpg",
 "Wiki": "Stenus_caesareus"
 },
 
 {
-"Name":	"keisarilyhytsiipi",
+"names":	[{	"language":	"fi",
+	"name": "Keisarilyhytsiipi"}],
 "LatinName": "Staphylinus caesareus",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Brown",
 "Territory": "",
-"Image": "images/Staphylinus_caesareus",
+"Image": "images/Staphylinus_caesareus.jpg",
 "Wiki": "Staphylinus_caesareus"
 },
 
 {
-"Name":	"sokkokuoriainen",
+"names":	[{	"language":	"fi",
+	"name": "Sokkokuoriainen"}],
 "LatinName": "Clariger testaceus",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Brown",
 "SecondaryColor": "Brown",
 "Territory": "",
-"Image": "images/Clariger_testaceus",
+"Image": "images/Clariger_testaceus.jpg",
 "Wiki": "Clariger_testaceus"
 },
 
 {
-"Name":	"muurahaiskuoriainen",
+"names":	[{	"language":	"fi",
+	"name": "Muurahaiskuoriainen"}],
 "LatinName": "Thanasimus formicarius",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Brown",
 "Territory": "",
-"Image": "images/Thanasimus_formicarius",
+"Image": "images/Thanasimus_formicarius.jpg",
 "Wiki": "Thanasimus_formicarius"
 },
 
 {
-"Name":	"rapsikuoriainen",
+"names":	[{	"language":	"fi",
+	"name": "Rapsikuoriainen"}],
 "LatinName": "Meligethes aeneus",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Green",
 "SecondaryColor": "Green",
 "Territory": "",
-"Image": "images/Meligethes_aeneus",
+"Image": "images/Meligethes_aeneus.jpg",
 "Wiki": "Meligethes_aeneus"
 },
 
 {
-"Name":	"seitsenpistepirkko",
+"names":	[{	"language":	"fi",
+	"name": "Seitsenpistepirkko"}],
 "LatinName": "Coccinella septempunctata",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Red",
 "SecondaryColor": "Black",
 "Territory": "",
-"Image": "images/Coccinella_septempunctata",
+"Image": "images/Coccinella_septempunctata.jpg",
 "Wiki": "Coccinella_septempunctata"
 },
 
 {
-"Name":	"kuutäpläpirkko",
+"names":	[{	"language":	"fi",
+	"name": "Kuutäpläpirkko"}],
 "LatinName": "Chilocorus renipustulatus",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Brown",
 "Territory": "",
-"Image": "images/Chilocorus_renipustulatus",
+"Image": "images/Chilocorus_renipustulatus.jpg",
 "Wiki": "Chilocorus_renipustulatus"
 },
 
 {
-"Name":	"ihrakuoriainen",
+"names":	[{	"language":	"fi",
+	"name": "Ihrakuoriainen"}],
 "LatinName": "Dermestes lardarius",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Brown",
 "Territory": "",
-"Image": "images/Dermestes_lardarius",
+"Image": "images/Dermestes_lardarius.jpg",
 "Wiki": "Dermestes_lardarius"
 },
 
 {
-"Name":	"turkiskuoriainen",
+"names":	[{	"language":	"fi",
+	"name": "Turkiskuoriainen"}],
 "LatinName": "Attagenus pellio",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Black",
 "Territory": "",
-"Image": "images/Attagenus_pellio",
+"Image": "images/Attagenus_pellio.jpg",
 "Wiki": "Attagenus_pellio"
 },
 
 {
-"Name":	"haudankaivaja",
+"names":	[{	"language":	"fi",
+	"name": "Haudankaivaja"}],
 "LatinName": "Necrophorus vespillo",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Red",
 "Territory": "",
-"Image": "images/Necrophorus_vespillo",
+"Image": "images/Necrophorus_vespillo.jpg",
 "Wiki": "Necrophorus_vespillo"
 },
 
 {
-"Name":	"musta turkkilo",
+"names":	[{	"language":	"fi",
+	"name": "Musta turkkilo"}],
 "LatinName": "Necrophorus humator",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Black",
 "Territory": "",
-"Image": "images/Necrophorus_humator",
+"Image": "images/Necrophorus_humator.jpg",
 "Wiki": "Necrophorus_humator"
 },
 
 {
-"Name":	"raatokuoriainen",
+"names":	[{	"language":	"fi",
+	"name": "Raatokuoriainen"}],
 "LatinName": "Oeceptoma thoracicum",
 "Category":	"Beetle",
 "Legs":	"6",
 "PrimaryColor": "Black",
 "SecondaryColor": "Brown",
 "Territory": "",
-"Image": "images/Oeceptoma_thoracicum",
+"Image": "images/Oeceptoma_thoracicum.jpg",
 "Wiki": "Oeceptoma_thoracicum"
 },
 
 {
-"Name":	"ritariperhonen",
+"names":	[{	"language":	"fi",
+	"name": "Ritariperhonen"}],
 "LatinName": "Papilio machaon",
 "Category":	"Butterfly",
 "Legs":	"4",
 "PrimaryColor": "Yellow",
 "SecondaryColor": "Blue",
 "Territory": "",
-"Image": "images/Papilio_machaon",
+"Image": "images/Papilio_machaon.jpg",
 "Wiki": "Papilio_machaon"
 },
 
 {
-"Name":	"apolloperhonen",
+"names":	[{	"language":	"fi",
+	"name": "Apolloperhonen"}],
 "LatinName": "Parnassius apollo",
 "Category":	"Butterfly",
 "Legs":	"4",
 "PrimaryColor": "White",
 "SecondaryColor": "Red",
 "Territory": "",
-"Image": "images/Parnassius_apollo",
+"Image": "images/Parnassius_apollo.jpg",
 "Wiki": "Parnassius_apollo"
 },
 
 {
-"Name":	"kaaliperhonen",
+"names":	[{	"language":	"fi",
+	"name": "Kaaliperhonen"}],
 "LatinName": "Pieris brassicae",
 "Category":	"Butterfly",
 "Legs":	"4",
 "PrimaryColor": "White",
 "SecondaryColor": "Blue",
 "Territory": "",
-"Image": "images/Pieris_brassicae",
+"Image": "images/Pieris_brassicae.jpg",
 "Wiki": "Pieris_brassicae"
 },
 
 {
-"Name":	"lanttuperhonen",
+"names":	[{	"language":	"fi",
+	"name": "Lanttuperhonen"}],
 "LatinName": "Pieris napi",
 "Category":	"Butterfly",
 "Legs":	"4",
 "PrimaryColor": "White",
 "SecondaryColor": "Yellow",
 "Territory": "",
-"Image": "images/Pieris_napi",
+"Image": "images/Pieris_napi.jpg",
 "Wiki": "Pieris_napi"
 },
 
 {
-"Name":	"sitruunaperhonen",
+"names":	[{	"language":	"fi",
+	"name": "Sitruunaperhonen"}],
 "LatinName": "Gonopteryx rhamni",
 "Category":	"Butterfly",
 "Legs":	"4",
 "PrimaryColor": "Yellow",
 "SecondaryColor": "Red",
 "Territory": "",
-"Image": "images/Gonopteryx_rhamni",
+"Image": "images/Gonopteryx_rhamni.jpg",
 "Wiki": "Gonopteryx_rhamni"
 },
 
 {
-"Name":	"orapihlajaperhonen",
+"names":	[{	"language":	"fi",
+	"name": "Orapihlajaperhonen"}],
 "LatinName": "Aporia crataegi",
 "Category":	"Butterfly",
 "Legs":	"4",
 "PrimaryColor": "White",
 "SecondaryColor": "Green",
 "Territory": "",
-"Image": "images/Aporia_crataeg",
+"Image": "images/Aporia_crataeg.jpg",
 "Wiki": "Aporia_crataegi"
 },
 
 {
-"Name":	"auroraperhonen",
+"names":	[{	"language":	"fi",
+	"name": "Auroraperhonen"}],
 "LatinName": "Anthocharis cardamines",
 "Category":	"Butterfly",
 "Legs":	"4",
 "PrimaryColor": "White",
 "SecondaryColor": "Orange",
 "Territory": "",
-"Image": "images/Anthocharis_cardamines",
+"Image": "images/Anthocharis_cardamines.jpg",
 "Wiki": "Anthocharis_cardamines"
 },
 
 {
-"Name":	"suon keltaperhonen",
+"names":	[{	"language":	"fi",
+	"name": "Suon keltaperhonen"}],
 "LatinName": "Colias palaeno",
 "Category":	"Butterfly",
 "Legs":	"4",
 "PrimaryColor": "Yellow",
 "SecondaryColor": "Brown",
 "Territory": "",
-"Image": "images/Colias_palaeno",
+"Image": "images/Colias_palaeno.jpg",
 "Wiki": "Colias_palaeno"
 },
 
 {
-"Name":	"haapaperhonen",
+"names":	[{	"language":	"fi",
+	"name": "Haapaperhonen"}],
 "LatinName": "Limentis populi",
 "Category":	"Butterfly",
 "Legs":	"4",
 "PrimaryColor": "Black",
 "SecondaryColor": "Orange",
 "Territory": "",
-"Image": "images/Limentis_populi",
+"Image": "images/Limentis_populi.jpg",
 "Wiki": "Limentis_populi"
 }
 

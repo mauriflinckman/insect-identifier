@@ -6,7 +6,7 @@ Supports LocalStorage.
 ## Installation
 
 npm install
-
+mv app/bower_components app/public/bower_components
 ## Quick start
 
 npm start
